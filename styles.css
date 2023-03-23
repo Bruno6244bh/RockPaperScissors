@@ -62,7 +62,7 @@ body {
     border-radius: 5px;
 }
 
-.resultado {
+.result {
     border: solid 1px #b0b3af;
     border-radius: 5px;
     width: 350px;
@@ -72,7 +72,7 @@ body {
     justify-content: center;
 }
 
-.resultadoOutput {
+.resultOutput {
     margin: 0;
     color: #b0b3af;
 }
