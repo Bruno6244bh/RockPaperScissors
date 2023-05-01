@@ -4,12 +4,22 @@ var randomGenerator;
 var pcPoints = 0;
 var playerPoints = 0;
 
+const buttonRock = document.querySelector("#rockButton");
+const buttonPaper = document.querySelector("#paperButton");
+const buttonScissor = document.querySelector("#scissorButton");
+
+buttonRock.addEventListener("click", chooseRock);
+buttonPaper.addEventListener("click", choosePaper);
+buttonScissor.addEventListener("click", chooseScissor);
+
+
 function chooseRock () {
     playerChoice = "rock";
     console.log("Player chose: " + playerChoice);
     document.getElementById("rockButton").style.backgroundColor = "#023C40";
     document.getElementById("paperButton").style.backgroundColor = "white";
     document.getElementById("scissorButton").style.backgroundColor = "white";
+    gamePosSubmit();
 }
 
 function choosePaper () {
@@ -18,6 +28,7 @@ function choosePaper () {
     document.getElementById("rockButton").style.backgroundColor = "white";
     document.getElementById("paperButton").style.backgroundColor = "#023C40";
     document.getElementById("scissorButton").style.backgroundColor = "white";
+    gamePosSubmit();
 }
 
 function chooseScissor () {
@@ -26,6 +37,7 @@ function chooseScissor () {
     document.getElementById("rockButton").style.backgroundColor = "white";
     document.getElementById("paperButton").style.backgroundColor = "white";
     document.getElementById("scissorButton").style.backgroundColor = "#023C40";
+    gamePosSubmit();
 }
 
 function randomNumber(a,b) {
